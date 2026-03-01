@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openspec new change \"create-backend-foundation\")",
+      "Bash(openspec status --change \"create-backend-foundation\" --json)",
+      "Bash(openspec instructions proposal --change \"create-backend-foundation\" --json)",
+      "Bash(*)",
+      "Bash(write:*)",
+      "Write(*)",
+      "Edit(*)",
+      "Bash(openspec instructions specs --change \"create-backend-foundation\" --json)",
+      "Bash(openspec instructions tasks --change \"create-backend-foundation\" --json)",
+      "Bash(openspec status --change \"create-backend-foundation\")",
+      "Bash(openspec instructions apply --change \"create-backend-foundation\" --json)",
+      "Bash(./mvnw compile)",
+      "Bash(curl -sL https://raw.githubusercontent.com/apache/maven-wrapper/master/maven-wrapper-distribution/src/resources/mvnw -o mvnw)",
+      "Bash(chmod +x mvnw)",
+      "Bash(curl -sL https://raw.githubusercontent.com/apache/maven-wrapper/master/maven-wrapper-distribution/src/resources/mvnw.cmd -o mvnw.cmd)",
+      "Bash(./mvnw compile -q)",
+      "Bash(java -version)",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Java/jdk-17\")",
+      "Bash(./mvnw clean compile)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s http://localhost:8080/api/tasks/stats)",
+      "Bash(curl -s \"http://localhost:8080/api/tasks?page=0&size=10\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f''totalElements={d[\"\"totalElements\"\"]}, totalPages={d[\"\"totalPages\"\"]}, size={d[\"\"size\"\"]}, number={d[\"\"number\"\"]}''\\)\")",
+      "Bash(*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "MultiEdit(*)",
+      "WebFetch(*)",
+      "Bash(ls -d /d/openspec/project-1/openspec/changes/create-backend-foundation/specs/*/)"
+    ],
+    "defaultMode": "bypassPermissions"
+  }
+}

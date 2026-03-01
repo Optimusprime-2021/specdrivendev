@@ -1,0 +1,56 @@
+# openspec/config.yaml
+# =============================================
+# Standards are in the reference doc:
+#   openspec/standards/java-coding-standards.md
+# This config keeps a summary + points AI to the full doc
+# =============================================
+
+schema: spec-driven
+
+context: |
+  Project: Task Management System
+  Backend: Java 17, Spring Boot 3.2, Spring Data JPA, Lombok
+  Frontend: React 18, Axios, CSS Modules, ErrorBoundary, Spinner, ConfirmDialog
+  Layout: Header (gradient blue, title+tagline), sticky Footer (copyright), flexbox layout
+  Components: StatusBar, TaskList, TaskTable, TaskRow, TaskForm, SearchFilters, Pagination, Toast
+  Database: H2 in-memory (dev)
+  API: RESTful JSON, paginated via Spring Page<T>
+
+  ## Coding Standards Reference
+  Full coding standards are documented in:
+    openspec/standards/java-coding-standards.md
+  
+  ALWAYS read that file before writing any Java code.
+  Key rules (see reference doc for complete details):
+  - Architecture: Controller -> Service -> Repository (STRICT)
+  - Naming: PascalCase classes, camelCase methods, UPPER_SNAKE constants
+  - Lombok: @Data, @Builder, @RequiredArgsConstructor, @Slf4j
+  - Entities: @Builder.Default for enum defaults, @PrePersist/@PreUpdate
+  - Services: @Transactional (writes), @Transactional(readOnly=true) (reads)
+  - Controllers: ResponseEntity<T>, @Valid on @RequestBody
+  - Errors: @ControllerAdvice, custom exceptions, {status,message,path,timestamp}
+  - Logging: @Slf4j, parameterized messages, log entry/exit of service methods
+
+  ## React Standards
+  - Components: PascalCase.jsx, functional + hooks only
+  - All API calls in try/catch with user-facing error messages
+  - Use destructuring for props and state
+
+rules:
+  proposal:
+    - Separate impact into Backend and Frontend sections
+    - List all affected API endpoints
+    - Include rollback strategy
+  specs:
+    - Use Given/When/Then for ALL scenarios
+    - Include validation rules from entity constraints
+    - Cover happy path AND error scenarios
+  design:
+    - Reference openspec/standards/java-coding-standards.md for patterns
+    - List all Spring Boot layers: Entity, Repo, Service, Controller
+    - List all React components with props
+    - Include API contract (request/response JSON)
+  tasks:
+    - Separate into Backend Tasks and Frontend Tasks
+    - Each task max 2 hours
+    - Include test task for each feature task

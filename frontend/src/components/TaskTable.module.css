@@ -1,0 +1,32 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+}
+
+.header {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  background: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .table {
+    min-width: 600px;
+  }
+}

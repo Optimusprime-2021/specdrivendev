@@ -1,0 +1,12 @@
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\exception\ErrorResponse.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\repository\TaskRepository.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\controller\TaskController.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\entity\Task.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\entity\TaskPriority.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\config\CorsConfig.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\exception\ResourceNotFoundException.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\service\TaskService.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\config\DataLoader.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\exception\GlobalExceptionHandler.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\entity\TaskStatus.java
+D:\openspec\project-1\backend\src\main\java\com\taskmanager\TaskManagerApplication.java

@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-size: 15px;
+}

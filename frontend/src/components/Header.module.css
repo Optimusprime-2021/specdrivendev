@@ -1,0 +1,48 @@
+.header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 18px 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 14px 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+}
